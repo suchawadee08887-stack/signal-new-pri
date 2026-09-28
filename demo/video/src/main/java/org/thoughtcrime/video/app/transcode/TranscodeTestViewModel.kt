@@ -21,7 +21,7 @@ import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.launch
-import dev.chat.fork.messenger.video.videoconverter.MediaConverter
+import org.thoughtcrime.securesms.video.videoconverter.MediaConverter
 import kotlin.math.roundToInt
 
 /**

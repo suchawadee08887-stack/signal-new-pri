@@ -2,7 +2,7 @@
 <merge xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context="dev.chat.fork.messenger.components.DocumentView"
+    tools:context="org.thoughtcrime.securesms.components.DocumentView"
     tools:viewBindingIgnore="true">
 
     <LinearLayout
@@ -14,7 +14,7 @@
         android:gravity="center_vertical"
         android:orientation="horizontal">
 
-        <dev.chat.fork.messenger.components.AnimatingToggle
+        <org.thoughtcrime.securesms.components.AnimatingToggle
             android:id="@+id/control_toggle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -120,7 +120,7 @@
                 android:src="@drawable/download_attachment"
                 android:visibility="gone" />
 
-        </dev.chat.fork.messenger.components.AnimatingToggle>
+        </org.thoughtcrime.securesms.components.AnimatingToggle>
 
         <LinearLayout
             android:layout_width="match_parent"

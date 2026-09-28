@@ -22,9 +22,9 @@ import androidx.annotation.Nullable;
 
 import org.signal.core.util.DimensionUnit;
 import org.signal.core.util.logging.Log;
-import dev.chat.fork.messenger.video.interfaces.MediaInput;
-import dev.chat.fork.messenger.video.interfaces.MediaInputFactory;
-import dev.chat.fork.messenger.video.videoconverter.VideoThumbnailsExtractor;
+import org.thoughtcrime.securesms.video.interfaces.MediaInput;
+import org.thoughtcrime.securesms.video.interfaces.MediaInputFactory;
+import org.thoughtcrime.securesms.video.videoconverter.VideoThumbnailsExtractor;
 
 import java.io.IOException;
 import java.lang.ref.WeakReference;

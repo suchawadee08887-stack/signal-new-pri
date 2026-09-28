@@ -27,7 +27,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/toolbar" />
 
-    <dev.chat.fork.messenger.components.emoji.EmojiEditText
+    <org.thoughtcrime.securesms.components.emoji.EmojiEditText
         android:id="@+id/name"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
@@ -181,14 +181,14 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/member_list_header" />
 
-    <dev.chat.fork.messenger.groups.ui.GroupMemberListView
+    <org.thoughtcrime.securesms.groups.ui.GroupMemberListView
         android:id="@+id/member_list"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toBottomOf="@id/member_list_header" />
 
-    <dev.chat.fork.messenger.util.views.CircularProgressMaterialButton
+    <org.thoughtcrime.securesms.util.views.CircularProgressMaterialButton
         android:id="@+id/create"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

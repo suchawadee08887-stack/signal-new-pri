@@ -14,7 +14,7 @@
         android:minHeight="56dp"
         android:orientation="horizontal">
 
-        <dev.chat.fork.messenger.components.emoji.EmojiTextView
+        <org.thoughtcrime.securesms.components.emoji.EmojiTextView
             android:id="@+id/editable_contact_name"
             android:layout_width="0dp"
             android:layout_height="wrap_content"

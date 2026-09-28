@@ -27,7 +27,7 @@ import org.signal.core.util.logging.Log
 import org.signal.mediasend.PreviewMediaInputFactory
 import org.signal.mediasend.R
 import org.signal.mediasend.screens.edit.MediaEditScreenEvents
-import dev.chat.fork.messenger.video.interfaces.MediaInputFactory
+import org.thoughtcrime.securesms.video.interfaces.MediaInputFactory
 import java.io.IOException
 import java.util.concurrent.TimeUnit
 import kotlin.time.Duration.Companion.microseconds

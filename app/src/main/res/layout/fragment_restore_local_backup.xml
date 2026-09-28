@@ -88,7 +88,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <dev.chat.fork.messenger.util.views.CircularProgressMaterialButton
+        <org.thoughtcrime.securesms.util.views.CircularProgressMaterialButton
             android:id="@+id/restore_button"
             android:layout_width="0dp"
             android:layout_height="wrap_content"

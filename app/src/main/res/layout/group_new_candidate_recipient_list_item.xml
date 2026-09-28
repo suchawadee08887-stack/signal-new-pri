@@ -9,7 +9,7 @@
     android:clickable="true"
     android:focusable="true">
 
-    <dev.chat.fork.messenger.components.AvatarImageView
+    <org.thoughtcrime.securesms.components.AvatarImageView
         android:id="@+id/recipient_avatar"
         android:layout_width="40dp"
         android:layout_height="40dp"
@@ -18,7 +18,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <dev.chat.fork.messenger.components.emoji.EmojiTextView
+    <org.thoughtcrime.securesms.components.emoji.EmojiTextView
         android:id="@+id/recipient_name"
         android:layout_width="0dp"
         android:layout_height="0dp"

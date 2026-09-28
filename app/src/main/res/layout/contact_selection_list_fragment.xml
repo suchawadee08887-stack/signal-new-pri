@@ -17,7 +17,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/chipRecycler">
 
-        <dev.chat.fork.messenger.contacts.paged.ContactSearchView
+        <org.thoughtcrime.securesms.contacts.paged.ContactSearchView
             android:id="@+id/recycler_view"
             android:layout_width="match_parent"
             android:layout_height="match_parent" />

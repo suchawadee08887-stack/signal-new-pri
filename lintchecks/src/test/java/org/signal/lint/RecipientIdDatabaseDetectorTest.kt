@@ -43,7 +43,7 @@ class RecipientIdDatabaseDetectorTest {
         java(
           """
           package foo;
-          import dev.chat.fork.messenger.database.RecipientIdDatabaseReference;
+          import org.thoughtcrime.securesms.database.RecipientIdDatabaseReference;
           public class Example extends Database implements RecipientIdDatabaseReference {
             private static final String RECIPIENT_ID = "recipient_id";
             @Override

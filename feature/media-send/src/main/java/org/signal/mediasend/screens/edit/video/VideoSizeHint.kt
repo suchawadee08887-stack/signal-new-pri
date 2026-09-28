@@ -14,8 +14,8 @@ import org.signal.core.ui.compose.DayNightPreviews
 import org.signal.core.ui.compose.Previews
 import org.signal.core.util.bytes
 import org.signal.mediasend.MediaConstraints
-import dev.chat.fork.messenger.video.TranscodingConfig
-import dev.chat.fork.messenger.video.TranscodingQuality
+import org.thoughtcrime.securesms.video.TranscodingConfig
+import org.thoughtcrime.securesms.video.TranscodingQuality
 import java.util.Locale
 import kotlin.time.Duration
 import kotlin.time.Duration.Companion.seconds

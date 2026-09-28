@@ -8,7 +8,7 @@
     tools:layout_width="56dp"
     tools:parentTag="android.widget.FrameLayout">
 
-    <dev.chat.fork.messenger.components.AvatarImageView
+    <org.thoughtcrime.securesms.components.AvatarImageView
         android:id="@+id/avatar_image_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />

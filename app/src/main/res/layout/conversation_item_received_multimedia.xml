@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<dev.chat.fork.messenger.conversation.ConversationItem xmlns:android="http://schemas.android.com/apk/res/android"
+<org.thoughtcrime.securesms.conversation.ConversationItem xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/conversation_item"
@@ -43,7 +43,7 @@
         android:layout_alignParentStart="true"
         android:layout_marginStart="4dp">
 
-        <dev.chat.fork.messenger.components.AvatarImageView
+        <org.thoughtcrime.securesms.components.AvatarImageView
             android:id="@+id/contact_photo"
             android:layout_width="@dimen/conversation_item_avatar_size"
             android:layout_height="@dimen/conversation_item_avatar_size"
@@ -54,7 +54,7 @@
 
     </FrameLayout>
 
-    <dev.chat.fork.messenger.badges.BadgeImageView
+    <org.thoughtcrime.securesms.badges.BadgeImageView
         android:id="@+id/badge"
         android:layout_width="16dp"
         android:layout_height="16dp"
@@ -75,7 +75,7 @@
         android:layout_marginBottom="4dp"
         android:layout_toEndOf="@id/contact_photo_container" />
 
-    <dev.chat.fork.messenger.conversation.ConversationItemBodyBubble
+    <org.thoughtcrime.securesms.conversation.ConversationItemBodyBubble
         android:id="@+id/body_bubble"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -99,7 +99,7 @@
             android:visibility="gone"
             tools:visibility="visible">
 
-            <dev.chat.fork.messenger.conversation.v2.items.SenderNameWithLabelView
+            <org.thoughtcrime.securesms.conversation.v2.items.SenderNameWithLabelView
                 android:id="@+id/group_sender_name_with_label"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -120,7 +120,7 @@
             android:visibility="gone"
             tools:visibility="visible">
 
-            <dev.chat.fork.messenger.components.emoji.EmojiTextView
+            <org.thoughtcrime.securesms.components.emoji.EmojiTextView
                 android:id="@+id/story_reacted_label"
                 style="@style/TextAppearance.Signal.Subtitle"
                 android:layout_width="wrap_content"
@@ -133,7 +133,7 @@
 
         </LinearLayout>
 
-        <dev.chat.fork.messenger.components.QuoteView
+        <org.thoughtcrime.securesms.components.QuoteView
             android:id="@+id/quote_view"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -216,7 +216,7 @@
             android:layout_height="wrap_content"
             android:layout="@layout/conversation_item_payment" />
 
-        <dev.chat.fork.messenger.components.emoji.EmojiTextView
+        <org.thoughtcrime.securesms.components.emoji.EmojiTextView
             android:id="@+id/conversation_item_body"
             style="@style/Signal.Text.Body"
             android:layout_width="wrap_content"
@@ -257,7 +257,7 @@
             android:layout_margin="8dp"
             android:layout="@layout/conversation_item_call_to_action" />
 
-        <dev.chat.fork.messenger.components.ConversationItemFooter
+        <org.thoughtcrime.securesms.components.ConversationItemFooter
             android:id="@+id/conversation_item_footer"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -274,7 +274,7 @@
             app:footer_reveal_dot_color="@color/conversation_item_sent_text_secondary_color"
             app:footer_text_color="@color/conversation_item_sent_text_secondary_color" />
 
-        <dev.chat.fork.messenger.components.ConversationItemFooter
+        <org.thoughtcrime.securesms.components.ConversationItemFooter
             android:id="@+id/conversation_item_sticker_footer"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -293,7 +293,7 @@
             app:footer_reveal_dot_color="@color/signal_icon_tint_secondary"
             app:footer_text_color="@color/signal_text_secondary" />
 
-    </dev.chat.fork.messenger.conversation.ConversationItemBodyBubble>
+    </org.thoughtcrime.securesms.conversation.ConversationItemBodyBubble>
 
     <FrameLayout
         android:layout_width="wrap_content"
@@ -303,7 +303,7 @@
         android:layout_alignBottom="@id/body_bubble"
         android:layout_marginEnd="-30dp" >
 
-        <dev.chat.fork.messenger.components.AlertView
+        <org.thoughtcrime.securesms.components.AlertView
             android:id="@+id/indicators_parent"
             android:layout_width="20dp"
             android:layout_height="20dp"
@@ -337,7 +337,7 @@
 
     </FrameLayout>
 
-    <dev.chat.fork.messenger.reactions.ReactionsConversationView
+    <org.thoughtcrime.securesms.reactions.ReactionsConversationView
         android:id="@+id/reactions_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -347,4 +347,4 @@
         android:orientation="horizontal"
         app:rcv_outgoing="false" />
 
-</dev.chat.fork.messenger.conversation.ConversationItem>
+</org.thoughtcrime.securesms.conversation.ConversationItem>

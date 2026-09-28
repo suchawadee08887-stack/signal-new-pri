@@ -8,7 +8,7 @@ syntax = "proto2";
 
 package signal;
 
-option java_package = "dev.chat.fork.messenger.backup.proto";
+option java_package = "org.thoughtcrime.securesms.backup.proto";
 
 message SqlStatement {
     message SqlParameter {

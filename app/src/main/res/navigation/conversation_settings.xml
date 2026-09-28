@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/conversationSettingsFragment"
-        android:name="dev.chat.fork.messenger.components.settings.conversation.ConversationSettingsFragment"
+        android:name="org.thoughtcrime.securesms.components.settings.conversation.ConversationSettingsFragment"
         android:label="app_settings_fragment"
         tools:layout="@layout/dsl_settings_fragment">
 
@@ -22,7 +22,7 @@
             <argument
                 android:name="recipient_id"
                 android:defaultValue="@null"
-                app:argType="dev.chat.fork.messenger.recipients.RecipientId"
+                app:argType="org.thoughtcrime.securesms.recipients.RecipientId"
                 app:nullable="true" />
 
             <argument
@@ -39,12 +39,12 @@
 
         <argument
             android:name="recipient_id"
-            app:argType="dev.chat.fork.messenger.recipients.RecipientId"
+            app:argType="org.thoughtcrime.securesms.recipients.RecipientId"
             app:nullable="true" />
 
         <argument
             android:name="group_id"
-            app:argType="dev.chat.fork.messenger.groups.GroupId"
+            app:argType="org.thoughtcrime.securesms.groups.GroupId"
             app:nullable="true" />
 
         <argument
@@ -62,7 +62,7 @@
 
             <argument
                 android:name="recipient_id"
-                app:argType="dev.chat.fork.messenger.recipients.RecipientId" />
+                app:argType="org.thoughtcrime.securesms.recipients.RecipientId" />
 
         </action>
 
@@ -76,7 +76,7 @@
 
             <argument
                 android:name="recipient_id"
-                app:argType="dev.chat.fork.messenger.recipients.RecipientId" />
+                app:argType="org.thoughtcrime.securesms.recipients.RecipientId" />
 
         </action>
 
@@ -90,7 +90,7 @@
 
             <argument
                 android:name="group_id"
-                app:argType="dev.chat.fork.messenger.groups.GroupId"
+                app:argType="org.thoughtcrime.securesms.groups.GroupId"
                 app:nullable="true" />
         </action>
 
@@ -104,7 +104,7 @@
 
             <argument
                 android:name="recipient_id"
-                app:argType="dev.chat.fork.messenger.recipients.RecipientId" />
+                app:argType="org.thoughtcrime.securesms.recipients.RecipientId" />
 
         </action>
 
@@ -126,7 +126,7 @@
 
             <argument
                 android:name="group_id"
-                app:argType="dev.chat.fork.messenger.groups.GroupId"
+                app:argType="org.thoughtcrime.securesms.groups.GroupId"
                 app:nullable="false" />
         </action>
 
@@ -140,7 +140,7 @@
 
             <argument
                 android:name="group_id"
-                app:argType="dev.chat.fork.messenger.groups.GroupId"
+                app:argType="org.thoughtcrime.securesms.groups.GroupId"
                 app:nullable="false" />
 
             <argument
@@ -156,12 +156,12 @@
 
     <fragment
         android:id="@+id/soundsAndNotificationsSettingsFragment"
-        android:name="dev.chat.fork.messenger.components.settings.conversation.sounds.SoundsAndNotificationsSettingsFragment"
+        android:name="org.thoughtcrime.securesms.components.settings.conversation.sounds.SoundsAndNotificationsSettingsFragment"
         tools:layout="@layout/dsl_settings_fragment">
 
         <argument
             android:name="recipient_id"
-            app:argType="dev.chat.fork.messenger.recipients.RecipientId" />
+            app:argType="org.thoughtcrime.securesms.recipients.RecipientId" />
 
         <action
             android:id="@+id/action_soundsAndNotificationsSettingsFragment_to_customNotificationsSettingsFragment"
@@ -175,11 +175,11 @@
 
     <fragment
         android:id="@+id/soundsAndNotificationsSettingsFragment2"
-        android:name="dev.chat.fork.messenger.components.settings.conversation.sounds.SoundsAndNotificationsSettingsFragment2">
+        android:name="org.thoughtcrime.securesms.components.settings.conversation.sounds.SoundsAndNotificationsSettingsFragment2">
 
         <argument
             android:name="recipient_id"
-            app:argType="dev.chat.fork.messenger.recipients.RecipientId" />
+            app:argType="org.thoughtcrime.securesms.recipients.RecipientId" />
 
         <action
             android:id="@+id/action_soundsAndNotificationsSettingsFragment2_to_customNotificationsSettingsFragment"
@@ -193,62 +193,62 @@
 
     <fragment
         android:id="@+id/internalDetailsSettingsFragment"
-        android:name="dev.chat.fork.messenger.components.settings.conversation.InternalConversationSettingsFragment">
+        android:name="org.thoughtcrime.securesms.components.settings.conversation.InternalConversationSettingsFragment">
 
         <argument
             android:name="recipient_id"
-            app:argType="dev.chat.fork.messenger.recipients.RecipientId" />
+            app:argType="org.thoughtcrime.securesms.recipients.RecipientId" />
 
     </fragment>
 
     <fragment
         android:id="@+id/permissionsSettingsFragment"
-        android:name="dev.chat.fork.messenger.components.settings.conversation.permissions.PermissionsSettingsFragment">
+        android:name="org.thoughtcrime.securesms.components.settings.conversation.permissions.PermissionsSettingsFragment">
 
         <argument
             android:name="group_id"
-            app:argType="dev.chat.fork.messenger.groups.GroupId"
+            app:argType="org.thoughtcrime.securesms.groups.GroupId"
             app:nullable="false" />
     </fragment>
 
     <fragment
         android:id="@+id/customNotificationsSettingsFragment"
-        android:name="dev.chat.fork.messenger.components.settings.conversation.sounds.custom.CustomNotificationsSettingsFragment">
+        android:name="org.thoughtcrime.securesms.components.settings.conversation.sounds.custom.CustomNotificationsSettingsFragment">
 
         <argument
             android:name="recipient_id"
-            app:argType="dev.chat.fork.messenger.recipients.RecipientId" />
+            app:argType="org.thoughtcrime.securesms.recipients.RecipientId" />
 
     </fragment>
 
     <fragment
         android:id="@+id/shareableGroupLinkFragment"
-        android:name="dev.chat.fork.messenger.recipients.ui.sharablegrouplink.ShareableGroupLinkFragment">
+        android:name="org.thoughtcrime.securesms.recipients.ui.sharablegrouplink.ShareableGroupLinkFragment">
 
         <argument
             android:name="group_id"
-            app:argType="dev.chat.fork.messenger.groups.GroupId"
+            app:argType="org.thoughtcrime.securesms.groups.GroupId"
             app:nullable="false" />
 
     </fragment>
 
     <fragment
         android:id="@+id/memberLabelFragment"
-        android:name="dev.chat.fork.messenger.groups.memberlabel.MemberLabelFragment">
+        android:name="org.thoughtcrime.securesms.groups.memberlabel.MemberLabelFragment">
 
         <argument
             android:name="group_id"
-            app:argType="dev.chat.fork.messenger.groups.GroupId"
+            app:argType="org.thoughtcrime.securesms.groups.GroupId"
             app:nullable="false" />
     </fragment>
 
     <fragment
         android:id="@+id/memberSearchFragment"
-        android:name="dev.chat.fork.messenger.groups.ui.MemberSearchFragment">
+        android:name="org.thoughtcrime.securesms.groups.ui.MemberSearchFragment">
 
         <argument
             android:name="group_id"
-            app:argType="dev.chat.fork.messenger.groups.GroupId"
+            app:argType="org.thoughtcrime.securesms.groups.GroupId"
             app:nullable="false" />
     </fragment>
 

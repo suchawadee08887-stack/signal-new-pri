@@ -7,7 +7,7 @@ package org.signal.mediasend.util
 
 import org.signal.mediasend.MediaConstraints
 import org.signal.mediasend.MediaSendDependencies
-import dev.chat.fork.messenger.video.videoconverter.utils.VideoConstants
+import org.thoughtcrime.securesms.video.videoconverter.utils.VideoConstants
 import kotlin.math.floor
 import kotlin.math.min
 

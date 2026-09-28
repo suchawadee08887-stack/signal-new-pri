@@ -9,7 +9,7 @@
     android:gravity="center"
     android:orientation="vertical">
 
-    <dev.chat.fork.messenger.components.AvatarImageView
+    <org.thoughtcrime.securesms.components.AvatarImageView
         android:id="@+id/avatar"
         android:layout_width="112dp"
         android:layout_height="112dp" />

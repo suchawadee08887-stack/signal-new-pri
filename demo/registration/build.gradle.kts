@@ -14,7 +14,7 @@ android {
 
   defaultConfig {
     // IMPORTANT: We use the same package name as the signal staging app so that FCM works.
-    applicationId = "dev.chat.fork.messenger.staging"
+    applicationId = "org.thoughtcrime.securesms.staging"
     versionCode = 1
     versionName = "1.0"
 

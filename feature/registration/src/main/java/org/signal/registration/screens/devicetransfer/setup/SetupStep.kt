@@ -6,7 +6,7 @@
 package org.signal.registration.screens.devicetransfer.setup
 
 /**
- * Mirrors `dev.chat.fork.messenger.devicetransfer.SetupStep` for the new-device side of the
+ * Mirrors `org.thoughtcrime.securesms.devicetransfer.SetupStep` for the new-device side of the
  * Wi-Fi Direct pairing state machine. `isProgress` screens show a spinner; `isError` screens
  * show the red error surface with a recovery action.
  */

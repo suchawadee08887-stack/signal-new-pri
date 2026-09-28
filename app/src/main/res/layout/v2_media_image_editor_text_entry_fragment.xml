@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<dev.chat.fork.messenger.components.InputAwareLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<org.thoughtcrime.securesms.components.InputAwareLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:viewBindingIgnore="true"
     android:layout_width="match_parent"
@@ -51,4 +51,4 @@
             app:tint="@color/core_white" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
-</dev.chat.fork.messenger.components.InputAwareLayout>
+</org.thoughtcrime.securesms.components.InputAwareLayout>

@@ -16,7 +16,7 @@ import javax.crypto.spec.IvParameterSpec
 import javax.crypto.spec.SecretKeySpec
 
 /**
- * Port of the bits of `dev.chat.fork.messenger.backup.BackupRecordInputStream` that the demo
+ * Port of the bits of `org.thoughtcrime.securesms.backup.BackupRecordInputStream` that the demo
  * ServerTask actually needs: reads the plaintext header to derive keys, then decrypts each
  * frame's length + payload so we can detect the `end = true` sentinel, and drains any attachment
  * body that follows a frame (attachments/stickers/avatars). Payloads are only parsed deeply

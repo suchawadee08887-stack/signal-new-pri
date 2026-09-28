@@ -11,7 +11,7 @@
     android:paddingHorizontal="@dimen/dsl_settings_gutter"
     tools:viewBindingIgnore="true">
 
-    <dev.chat.fork.messenger.components.AvatarImageView
+    <org.thoughtcrime.securesms.components.AvatarImageView
         android:id="@+id/recipient_avatar"
         android:layout_width="40dp"
         android:layout_height="40dp"
@@ -20,7 +20,7 @@
         app:layout_constraintTop_toTopOf="parent"
         tools:src="@tools:sample/avatars" />
 
-    <dev.chat.fork.messenger.badges.BadgeImageView
+    <org.thoughtcrime.securesms.badges.BadgeImageView
         android:id="@+id/recipient_badge"
         android:layout_width="24dp"
         android:layout_height="24dp"
@@ -45,7 +45,7 @@
         app:layout_constraintTop_toTopOf="parent"
         tools:checked="true" />
 
-    <dev.chat.fork.messenger.components.emoji.EmojiTextView
+    <org.thoughtcrime.securesms.components.emoji.EmojiTextView
         android:id="@+id/recipient_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -73,7 +73,7 @@
         app:layout_constraintStart_toEndOf="@+id/recipient_avatar"
         app:layout_constraintTop_toBottomOf="@+id/recipient_name">
 
-        <dev.chat.fork.messenger.groups.memberlabel.MemberLabelPillView
+        <org.thoughtcrime.securesms.groups.memberlabel.MemberLabelPillView
             android:id="@+id/recipient_member_label"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -92,7 +92,7 @@
             android:textColor="@color/signal_colorOnSurfaceVariant"
             android:visibility="gone" />
 
-        <dev.chat.fork.messenger.components.emoji.EmojiTextView
+        <org.thoughtcrime.securesms.components.emoji.EmojiTextView
             android:id="@+id/recipient_about"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -146,7 +146,7 @@
         app:layout_goneMarginEnd="0dp"
         tools:visibility="visible">
 
-        <dev.chat.fork.messenger.groups.ui.PopupMenuView
+        <org.thoughtcrime.securesms.groups.ui.PopupMenuView
             android:id="@+id/popupMenu"
             android:layout_width="24dp"
             android:layout_height="24dp"

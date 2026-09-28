@@ -7,7 +7,7 @@
     android:layout_height="?attr/listPreferredItemHeight"
     android:background="?attr/selectableItemBackground">
 
-    <dev.chat.fork.messenger.components.AvatarImageView
+    <org.thoughtcrime.securesms.components.AvatarImageView
         android:id="@+id/avatar"
         android:layout_width="48dp"
         android:layout_height="48dp"

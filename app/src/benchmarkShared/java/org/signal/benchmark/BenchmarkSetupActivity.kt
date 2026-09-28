@@ -14,19 +14,19 @@ import org.signal.benchmark.setup.Harness
 import org.signal.benchmark.setup.TestMessages
 import org.signal.benchmark.setup.TestUsers
 import org.signal.core.util.logging.Log
-import dev.chat.fork.messenger.BaseActivity
-import dev.chat.fork.messenger.backup.v2.BackupRepository
-import dev.chat.fork.messenger.crypto.ProfileKeyUtil
-import dev.chat.fork.messenger.database.SignalDatabase
-import dev.chat.fork.messenger.database.TestDbUtils
-import dev.chat.fork.messenger.database.model.databaseprotos.RestoreDecisionState
-import dev.chat.fork.messenger.keyvalue.SignalStore
-import dev.chat.fork.messenger.keyvalue.Skipped
-import dev.chat.fork.messenger.mms.OutgoingMessage
-import dev.chat.fork.messenger.profiles.ProfileName
-import dev.chat.fork.messenger.recipients.Recipient
-import dev.chat.fork.messenger.registration.util.RegistrationUtil
-import dev.chat.fork.messenger.util.TextSecurePreferences
+import org.thoughtcrime.securesms.BaseActivity
+import org.thoughtcrime.securesms.backup.v2.BackupRepository
+import org.thoughtcrime.securesms.crypto.ProfileKeyUtil
+import org.thoughtcrime.securesms.database.SignalDatabase
+import org.thoughtcrime.securesms.database.TestDbUtils
+import org.thoughtcrime.securesms.database.model.databaseprotos.RestoreDecisionState
+import org.thoughtcrime.securesms.keyvalue.SignalStore
+import org.thoughtcrime.securesms.keyvalue.Skipped
+import org.thoughtcrime.securesms.mms.OutgoingMessage
+import org.thoughtcrime.securesms.profiles.ProfileName
+import org.thoughtcrime.securesms.recipients.Recipient
+import org.thoughtcrime.securesms.registration.util.RegistrationUtil
+import org.thoughtcrime.securesms.util.TextSecurePreferences
 
 class BenchmarkSetupActivity : BaseActivity() {
 

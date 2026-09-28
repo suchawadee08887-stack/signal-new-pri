@@ -16,9 +16,9 @@ import kotlinx.coroutines.currentCoroutineContext
 import kotlinx.coroutines.ensureActive
 import kotlinx.coroutines.isActive
 import org.signal.core.util.logging.Log
-import dev.chat.fork.messenger.video.StreamingTranscoder
-import dev.chat.fork.messenger.video.postprocessing.Mp4FaststartPostProcessor
-import dev.chat.fork.messenger.video.videoconverter.mediadatasource.InputStreamMediaDataSource
+import org.thoughtcrime.securesms.video.StreamingTranscoder
+import org.thoughtcrime.securesms.video.postprocessing.Mp4FaststartPostProcessor
+import org.thoughtcrime.securesms.video.videoconverter.mediadatasource.InputStreamMediaDataSource
 import java.io.File
 import java.io.FileInputStream
 import java.io.IOException

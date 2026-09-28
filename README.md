@@ -10,9 +10,9 @@ Millions of people use Signal every day for free and instantaneous communication
 
 Signal’s advanced privacy-preserving technology is always enabled, so you can focus on sharing the moments that matter with the people who matter to you.
 
-Currently available on the [Play Store](https://play.google.com/store/apps/details?id=dev.chat.fork.messenger) and [signal.org](https://signal.org/android/apk/).
+Currently available on the [Play Store](https://play.google.com/store/apps/details?id=org.thoughtcrime.securesms) and [signal.org](https://signal.org/android/apk/).
 
-<a href='https://play.google.com/store/apps/details?id=dev.chat.fork.messenger&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png' height='80px'/></a>
+<a href='https://play.google.com/store/apps/details?id=org.thoughtcrime.securesms&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png' height='80px'/></a>
 
 Also available on [iOS](https://github.com/signalapp/signal-ios) and [Desktop](https://github.com/signalapp/signal-desktop).
 
@@ -25,7 +25,7 @@ https://github.com/signalapp/Signal-Android/issues
 Want to live life on the bleeding edge and help out with testing?
 
 You can subscribe to Signal Android Beta releases here:
-https://play.google.com/apps/testing/dev.chat.fork.messenger
+https://play.google.com/apps/testing/org.thoughtcrime.securesms
 
 If you're interested in a life of peace and tranquility, stick with the standard releases.
 

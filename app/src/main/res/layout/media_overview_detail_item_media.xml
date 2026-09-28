@@ -17,7 +17,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <dev.chat.fork.messenger.components.ThumbnailView
+        <org.thoughtcrime.securesms.components.ThumbnailView
             android:id="@+id/image"
             android:layout_width="48dp"
             android:layout_height="48dp"

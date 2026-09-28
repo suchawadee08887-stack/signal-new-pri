@@ -14,7 +14,7 @@ import org.signal.core.models.media.MediaFolder
 import org.signal.imageeditor.core.model.EditorModel
 import org.signal.mediasend.preupload.PreUploadResult
 import org.signal.mediasend.screens.edit.image.BrushWidths
-import dev.chat.fork.messenger.video.TranscodingConfig
+import org.thoughtcrime.securesms.video.TranscodingConfig
 import java.io.InputStream
 import kotlin.time.Duration
 

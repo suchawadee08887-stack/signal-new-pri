@@ -39,7 +39,7 @@ class SearchBenchmarks {
   fun conversationListSearch() {
     var setup = false
     benchmarkRule.measureRepeated(
-      packageName = "dev.chat.fork.messenger.benchmark",
+      packageName = "org.thoughtcrime.securesms.benchmark",
       metrics = listOf(
         TraceSectionMetric("ConversationListSearch-Messages", Mode.Sum),
         TraceSectionMetric("ConversationListSearch-Threads", Mode.Sum)

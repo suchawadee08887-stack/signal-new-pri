@@ -38,7 +38,7 @@ class MessageProcessingBenchmarks {
 
   private fun run(withConversationOpen: Boolean) {
     benchmarkRule.measureRepeated(
-      packageName = "dev.chat.fork.messenger.benchmark",
+      packageName = "org.thoughtcrime.securesms.benchmark",
       metrics = BenchmarkMetrics.incomingMessageObserver + BenchmarkMetrics.messageContentProcessor + BenchmarkMetrics.individualDataMessageProcessor,
       iterations = 3,
       compilationMode = CompilationMode.Partial(),
