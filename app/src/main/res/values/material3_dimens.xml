@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="signal_m3_large_button_height">44sp</dimen>
+    <!-- Prefer shared tokens from dimens.xml / core:ui Dimensions for new UI. -->
+    <dimen name="signal_m3_touch_target">@dimen/signal_min_touch_target</dimen>
+</resources>

@@ -1,0 +1,17 @@
+[
+{
+  "directory": "C:/Users/pc/Music/n/Signal-Android/feature/registration/.cxx/Debug/b5c2c5y4/x86_64",
+  "command": "C:\\Users\\pc\\AppData\\Local\\Android\\Sdk\\ndk\\28.2.13676358\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang++.exe --target=x86_64-none-linux-android23 --sysroot=C:/Users/pc/AppData/Local/Android/Sdk/ndk/28.2.13676358/toolchains/llvm/prebuilt/windows-x86_64/sysroot -Dcryptoport_EXPORTS -IC:/Users/pc/Music/n/Signal-Android/feature/registration/src/main/cpp/libsodium/include -isystem C:/Users/pc/Music/n/Signal-Android/feature/registration/src/main/cpp/third_party -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -fno-limit-debug-info  -fPIC -o CMakeFiles\\cryptoport.dir\\native_crypto_jni.cpp.o -c C:\\Users\\pc\\Music\\n\\Signal-Android\\feature\\registration\\src\\main\\cpp\\native_crypto_jni.cpp",
+  "file": "C:\\Users\\pc\\Music\\n\\Signal-Android\\feature\\registration\\src\\main\\cpp\\native_crypto_jni.cpp"
+},
+{
+  "directory": "C:/Users/pc/Music/n/Signal-Android/feature/registration/.cxx/Debug/b5c2c5y4/x86_64",
+  "command": "C:\\Users\\pc\\AppData\\Local\\Android\\Sdk\\ndk\\28.2.13676358\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang++.exe --target=x86_64-none-linux-android23 --sysroot=C:/Users/pc/AppData/Local/Android/Sdk/ndk/28.2.13676358/toolchains/llvm/prebuilt/windows-x86_64/sysroot -Dcryptoport_EXPORTS -IC:/Users/pc/Music/n/Signal-Android/feature/registration/src/main/cpp/libsodium/include -isystem C:/Users/pc/Music/n/Signal-Android/feature/registration/src/main/cpp/third_party -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -fno-limit-debug-info  -fPIC -o CMakeFiles\\cryptoport.dir\\ServiceCrypto.cpp.o -c C:\\Users\\pc\\Music\\n\\Signal-Android\\feature\\registration\\src\\main\\cpp\\ServiceCrypto.cpp",
+  "file": "C:\\Users\\pc\\Music\\n\\Signal-Android\\feature\\registration\\src\\main\\cpp\\ServiceCrypto.cpp"
+},
+{
+  "directory": "C:/Users/pc/Music/n/Signal-Android/feature/registration/.cxx/Debug/b5c2c5y4/x86_64",
+  "command": "C:\\Users\\pc\\AppData\\Local\\Android\\Sdk\\ndk\\28.2.13676358\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang++.exe --target=x86_64-none-linux-android23 --sysroot=C:/Users/pc/AppData/Local/Android/Sdk/ndk/28.2.13676358/toolchains/llvm/prebuilt/windows-x86_64/sysroot -Dcryptoport_EXPORTS -IC:/Users/pc/Music/n/Signal-Android/feature/registration/src/main/cpp/libsodium/include -isystem C:/Users/pc/Music/n/Signal-Android/feature/registration/src/main/cpp/third_party -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -fno-limit-debug-info  -fPIC -o CMakeFiles\\cryptoport.dir\\native-lib.cpp.o -c C:\\Users\\pc\\Music\\n\\Signal-Android\\feature\\registration\\src\\main\\cpp\\native-lib.cpp",
+  "file": "C:\\Users\\pc\\Music\\n\\Signal-Android\\feature\\registration\\src\\main\\cpp\\native-lib.cpp"
+}
+]

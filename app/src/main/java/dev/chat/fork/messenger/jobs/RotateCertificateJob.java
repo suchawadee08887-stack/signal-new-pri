@@ -1,0 +1,105 @@
+package dev.chat.fork.messenger.jobs;
+
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+
+import org.signal.core.util.logging.Log;
+import dev.chat.fork.messenger.jobmanager.Job;
+import dev.chat.fork.messenger.jobmanager.impl.NetworkConstraint;
+import dev.chat.fork.messenger.jobmanager.impl.SealedSenderConstraint;
+import dev.chat.fork.messenger.keyvalue.CertificateType;
+import dev.chat.fork.messenger.keyvalue.SignalStore;
+import dev.chat.fork.messenger.net.SignalNetwork;
+import dev.chat.fork.messenger.util.ExceptionHelper;
+import dev.chat.fork.messenger.util.TextSecurePreferences;
+import org.whispersystems.signalservice.api.NetworkResultUtil;
+
+import java.io.IOException;
+import java.util.Collection;
+import java.util.concurrent.TimeUnit;
+
+public final class RotateCertificateJob extends BaseJob {
+
+  public static final String KEY = "RotateCertificateJob";
+
+  private static final String TAG = Log.tag(RotateCertificateJob.class);
+
+  public RotateCertificateJob() {
+    this(new Job.Parameters.Builder()
+                           .setQueue("__ROTATE_SENDER_CERTIFICATE__")
+                           .addConstraint(NetworkConstraint.KEY)
+                           .setLifespan(TimeUnit.DAYS.toMillis(1))
+                           .setMaxAttempts(Parameters.UNLIMITED)
+                           .build());
+  }
+
+  private RotateCertificateJob(@NonNull Job.Parameters parameters) {
+    super(parameters);
+  }
+
+  @Override
+  public @Nullable byte[] serialize() {
+    return null;
+  }
+
+  @Override
+  public @NonNull String getFactoryKey() {
+    return KEY;
+  }
+
+  @Override
+  public void onAdded() {}
+
+  @Override
+  public void onRun() throws IOException {
+    if (!SignalStore.account().isRegistered()) {
+      Log.w(TAG, "Not yet registered. Ignoring.");
+      return;
+    }
+
+    if (TextSecurePreferences.isUnauthorizedReceived(context)) {
+      Log.i(TAG, "No longer authorized. Ignoring.");
+      return;
+    }
+
+    synchronized (RotateCertificateJob.class) {
+      Collection<CertificateType> certificateTypes = SignalStore.phoneNumberPrivacy()
+                                                                .getAllCertificateTypes();
+
+      Log.i(TAG, "Rotating these certificates " + certificateTypes);
+
+      for (CertificateType certificateType: certificateTypes) {
+        byte[] certificate;
+
+        switch (certificateType) {
+          case ACI_AND_E164: certificate = NetworkResultUtil.toBasicLegacy(SignalNetwork.certificate().getSenderCertificate()); break;
+          case ACI_ONLY    : certificate = NetworkResultUtil.toBasicLegacy(SignalNetwork.certificate().getSenderCertificateForPhoneNumberPrivacy()); break;
+          default          : throw new AssertionError();
+        }
+
+        Log.i(TAG, String.format("Successfully got %s certificate", certificateType));
+        SignalStore.certificate()
+                   .setUnidentifiedAccessCertificate(certificateType, certificate);
+      }
+    }
+
+    SealedSenderConstraint.markValid();
+  }
+
+  @Override
+  public boolean onShouldRetry(@NonNull Exception e) {
+    return ExceptionHelper.isRetryableIOException(e);
+  }
+
+  @Override
+  public void onFailure() {
+    Log.w(TAG, "Failed to rotate sender certificate!");
+  }
+
+  public static final class Factory implements Job.Factory<RotateCertificateJob> {
+    @Override
+    public @NonNull RotateCertificateJob create(@NonNull Parameters parameters, @Nullable byte[] serializedData) {
+      return new RotateCertificateJob(parameters);
+    }
+  }
+}

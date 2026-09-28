@@ -1,0 +1,9 @@
+# ninja log v5
+8	289	8107995200152664	CMakeFiles/cryptoport.dir/native-lib.cpp.o	5038831df7a6331f
+1	4016	8107995238279773	CMakeFiles/cryptoport.dir/native_crypto_jni.cpp.o	e88a07c5b2f5ab7f
+6	4105	8107995239190821	CMakeFiles/cryptoport.dir/ServiceCrypto.cpp.o	d40985dc042c4d0a
+4106	4510	8107995243136674	C:/Users/pc/Music/n/Signal-Android/feature/registration/build/intermediates/cxx/Debug/b5c2c5y4/obj/x86/libcryptoport.so	9913ca0b8d84742e
+6	190	8108162018903232	CMakeFiles/cryptoport.dir/native-lib.cpp.o	5038831df7a6331f
+191	491	8108162021695310	C:/Users/pc/Music/n/Signal-Android/feature/registration/build/intermediates/cxx/Debug/b5c2c5y4/obj/x86/libcryptoport.so	9913ca0b8d84742e
+6	214	8121871688082410	CMakeFiles/cryptoport.dir/native-lib.cpp.o	5038831df7a6331f
+215	327	8121871689133440	C:/Users/pc/Music/n/Signal-Android/feature/registration/build/intermediates/cxx/Debug/b5c2c5y4/obj/x86/libcryptoport.so	9913ca0b8d84742e

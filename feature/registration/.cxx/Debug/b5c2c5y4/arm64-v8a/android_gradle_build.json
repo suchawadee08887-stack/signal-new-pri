@@ -1,0 +1,40 @@
+{
+  "buildFiles": [
+    "C:\\Users\\pc\\Music\\n\\Signal-Android\\feature\\registration\\src\\main\\cpp\\CMakeLists.txt"
+  ],
+  "cleanCommandsComponents": [
+    [
+      "C:\\Users\\pc\\AppData\\Local\\Android\\Sdk\\cmake\\3.22.1\\bin\\ninja.exe",
+      "-C",
+      "C:\\Users\\pc\\Music\\n\\Signal-Android\\feature\\registration\\.cxx\\Debug\\b5c2c5y4\\arm64-v8a",
+      "clean"
+    ]
+  ],
+  "buildTargetsCommandComponents": [
+    "C:\\Users\\pc\\AppData\\Local\\Android\\Sdk\\cmake\\3.22.1\\bin\\ninja.exe",
+    "-C",
+    "C:\\Users\\pc\\Music\\n\\Signal-Android\\feature\\registration\\.cxx\\Debug\\b5c2c5y4\\arm64-v8a",
+    "{LIST_OF_TARGETS_TO_BUILD}"
+  ],
+  "libraries": {
+    "cryptoport::@6890427a1f51a3e7e1df": {
+      "toolchain": "toolchain",
+      "abi": "arm64-v8a",
+      "artifactName": "cryptoport",
+      "output": "C:\\Users\\pc\\Music\\n\\Signal-Android\\feature\\registration\\build\\intermediates\\cxx\\Debug\\b5c2c5y4\\obj\\arm64-v8a\\libcryptoport.so",
+      "runtimeFiles": [
+        "C:\\Users\\pc\\Music\\n\\Signal-Android\\feature\\registration\\src\\main\\cpp\\libsodium\\libs\\arm64-v8a\\libsodium.so"
+      ]
+    }
+  },
+  "toolchains": {
+    "toolchain": {
+      "cCompilerExecutable": "C:\\Users\\pc\\AppData\\Local\\Android\\Sdk\\ndk\\28.2.13676358\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang.exe",
+      "cppCompilerExecutable": "C:\\Users\\pc\\AppData\\Local\\Android\\Sdk\\ndk\\28.2.13676358\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang++.exe"
+    }
+  },
+  "cFileExtensions": [],
+  "cppFileExtensions": [
+    "cpp"
+  ]
+}

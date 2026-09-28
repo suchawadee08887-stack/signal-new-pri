@@ -1,0 +1,23 @@
+# ninja log v5
+32	249	8107747587781532	CMakeFiles/cryptoport.dir/native-lib.cpp.o	cc5509eb769fd77d
+1	3081	8107747616226315	CMakeFiles/cryptoport.dir/native_crypto_jni.cpp.o	ccb20b8d5602db7e
+30	3176	8107747616866058	CMakeFiles/cryptoport.dir/ServiceCrypto.cpp.o	5c2537df81a06e5e
+3177	3337	8107747618844534	C:/Users/pc/Music/n/Signal-Android/feature/registration/build/intermediates/cxx/RelWithDebInfo/4k651q40/obj/arm64-v8a/libcryptoport.so	67b3afbff62cf514
+6	188	8108034016828162	CMakeFiles/cryptoport.dir/native-lib.cpp.o	cc5509eb769fd77d
+189	301	8108034017848725	C:/Users/pc/Music/n/Signal-Android/feature/registration/build/intermediates/cxx/RelWithDebInfo/4k651q40/obj/arm64-v8a/libcryptoport.so	67b3afbff62cf514
+10	146	8108146955029463	CMakeFiles/cryptoport.dir/native-lib.cpp.o	cc5509eb769fd77d
+146	244	8108146955914675	C:/Users/pc/Music/n/Signal-Android/feature/registration/build/intermediates/cxx/RelWithDebInfo/4k651q40/obj/arm64-v8a/libcryptoport.so	67b3afbff62cf514
+6	147	8108269390828757	CMakeFiles/cryptoport.dir/native-lib.cpp.o	cc5509eb769fd77d
+147	248	8108269391768884	C:/Users/pc/Music/n/Signal-Android/feature/registration/build/intermediates/cxx/RelWithDebInfo/4k651q40/obj/arm64-v8a/libcryptoport.so	67b3afbff62cf514
+8	191	8110114130234050	CMakeFiles/cryptoport.dir/native-lib.cpp.o	cc5509eb769fd77d
+191	338	8110114131584951	C:/Users/pc/Music/n/Signal-Android/feature/registration/build/intermediates/cxx/RelWithDebInfo/4k651q40/obj/arm64-v8a/libcryptoport.so	67b3afbff62cf514
+9	248	8113588732446855	CMakeFiles/cryptoport.dir/native-lib.cpp.o	cc5509eb769fd77d
+249	390	8113588733657415	C:/Users/pc/Music/n/Signal-Android/feature/registration/build/intermediates/cxx/RelWithDebInfo/4k651q40/obj/arm64-v8a/libcryptoport.so	67b3afbff62cf514
+15	129	8113659692100872	CMakeFiles/cryptoport.dir/native-lib.cpp.o	cc5509eb769fd77d
+130	206	8113659692836099	C:/Users/pc/Music/n/Signal-Android/feature/registration/build/intermediates/cxx/RelWithDebInfo/4k651q40/obj/arm64-v8a/libcryptoport.so	67b3afbff62cf514
+9	380	8116977596437833	CMakeFiles/cryptoport.dir/native-lib.cpp.o	cc5509eb769fd77d
+381	695	8116977599708073	C:/Users/pc/Music/n/Signal-Android/feature/registration/build/intermediates/cxx/RelWithDebInfo/4k651q40/obj/arm64-v8a/libcryptoport.so	67b3afbff62cf514
+6	101	8116986320972997	CMakeFiles/cryptoport.dir/native-lib.cpp.o	cc5509eb769fd77d
+101	195	8116986321813001	C:/Users/pc/Music/n/Signal-Android/feature/registration/build/intermediates/cxx/RelWithDebInfo/4k651q40/obj/arm64-v8a/libcryptoport.so	67b3afbff62cf514
+6	153	8121922347863803	CMakeFiles/cryptoport.dir/native-lib.cpp.o	cc5509eb769fd77d
+153	262	8121922348849826	C:/Users/pc/Music/n/Signal-Android/feature/registration/build/intermediates/cxx/RelWithDebInfo/4k651q40/obj/arm64-v8a/libcryptoport.so	67b3afbff62cf514

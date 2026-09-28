@@ -1,0 +1,3 @@
+C:/Users/pc/Music/n/Signal-Android/feature/registration/.cxx/RelWithDebInfo/4k651q40/armeabi-v7a/CMakeFiles/cryptoport.dir
+C:/Users/pc/Music/n/Signal-Android/feature/registration/.cxx/RelWithDebInfo/4k651q40/armeabi-v7a/CMakeFiles/edit_cache.dir
+C:/Users/pc/Music/n/Signal-Android/feature/registration/.cxx/RelWithDebInfo/4k651q40/armeabi-v7a/CMakeFiles/rebuild_cache.dir

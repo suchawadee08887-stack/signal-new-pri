@@ -1,0 +1,27 @@
+package dev.chat.fork.messenger.push;
+
+import android.content.Context;
+
+import dev.chat.fork.messenger.R;
+import org.signal.network.config.TrustStore;
+
+import java.io.InputStream;
+
+public class IasTrustStore implements TrustStore {
+
+  private final Context context;
+
+  public IasTrustStore(Context context) {
+    this.context = context.getApplicationContext();
+  }
+
+  @Override
+  public InputStream getKeyStoreInputStream() {
+    return context.getResources().openRawResource(R.raw.ias);
+  }
+
+  @Override
+  public String getKeyStorePassword() {
+    return "whisper";
+  }
+}

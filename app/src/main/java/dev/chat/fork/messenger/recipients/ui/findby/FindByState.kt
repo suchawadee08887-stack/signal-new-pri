@@ -1,0 +1,44 @@
+/*
+ * Copyright 2024 Signal Messenger, LLC
+ * SPDX-License-Identifier: AGPL-3.0-only
+ */
+
+package dev.chat.fork.messenger.recipients.ui.findby
+
+import com.google.i18n.phonenumbers.NumberParseException
+import com.google.i18n.phonenumbers.PhoneNumberUtil
+import org.signal.core.util.orNull
+import dev.chat.fork.messenger.recipients.Recipient
+import dev.chat.fork.messenger.registration.ui.countrycode.Country
+import dev.chat.fork.messenger.registration.ui.countrycode.CountryUtils
+
+/**
+ * State for driving find by number/username screen.
+ */
+data class FindByState(
+  val mode: FindByMode,
+  val userEntry: String = "",
+  val supportedCountries: List<Country> = CountryUtils.getCountries(),
+  val filteredCountries: List<Country> = emptyList(),
+  val selectedCountry: Country = supportedCountries.first(),
+  val isLookupInProgress: Boolean = false,
+  val query: String = "",
+  val lastLookupRecord: String = ""
+) {
+  companion object {
+    fun startingState(self: Recipient, mode: FindByMode): FindByState {
+      val countryCode: Int = try {
+        PhoneNumberUtil.getInstance()
+          .parse(self.e164.orNull(), null)
+          .countryCode
+      } catch (e: NumberParseException) {
+        -1
+      }
+
+      val state = FindByState(mode = mode)
+      return state.copy(
+        selectedCountry = state.supportedCountries.firstOrNull { it.countryCode == countryCode } ?: state.supportedCountries.first()
+      )
+    }
+  }
+}

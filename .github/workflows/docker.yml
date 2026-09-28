@@ -1,0 +1,21 @@
+name: Check reproducible-build Dockerfile
+
+on:
+  schedule:
+    - cron: "0 5 * * *"
+
+permissions:
+  contents: read # to fetch code (actions/checkout)
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@df4cb1c069e1874edd31b4311f1884172cec0e10 # v6.0.3
+        # gh api repos/actions/checkout/commits/v6 --jq '.sha'
+      - name: Build image
+        run: |
+          cd reproducible-builds
+          docker build -t signal-android .
+      - name: Test build
+        run: docker run --memory=12g --rm -v "$(pwd)":/project -w /project signal-android ./gradlew --no-daemon --max-workers=1 -Dorg.gradle.jvmargs="-Xmx4g -XX:MaxMetaspaceSize=512m" -Dkotlin.compiler.execution.strategy=in-process bundlePlayProdRelease

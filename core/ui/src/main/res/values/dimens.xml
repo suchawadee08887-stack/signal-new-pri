@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright 2025 Signal Messenger, LLC
+  ~ SPDX-License-Identifier: AGPL-3.0-only
+  ~
+  ~ Shared layout tokens. Keep in sync with
+  ~ org.signal.core.ui.compose.theme.Dimensions where practical.
+  -->
+<resources>
+    <!-- Spacing (4dp grid) -->
+    <dimen name="signal_space_1">4dp</dimen>
+    <dimen name="signal_space_2">8dp</dimen>
+    <dimen name="signal_space_3">12dp</dimen>
+    <dimen name="signal_space_4">16dp</dimen>
+    <dimen name="signal_space_5">20dp</dimen>
+    <dimen name="signal_space_6">24dp</dimen>
+    <dimen name="signal_space_8">32dp</dimen>
+
+    <!-- Page gutters -->
+    <dimen name="gutter">16dp</dimen>
+    <dimen name="gutter_wide">24dp</dimen>
+
+    <!-- Radii -->
+    <dimen name="signal_radius_small">8dp</dimen>
+    <dimen name="signal_radius_medium">12dp</dimen>
+    <dimen name="signal_radius_large">18dp</dimen>
+    <dimen name="signal_radius_xlarge">24dp</dimen>
+    <dimen name="bottom_sheet_corner_size">18dp</dimen>
+
+    <!-- Touch / chrome -->
+    <dimen name="signal_min_touch_target">48dp</dimen>
+    <dimen name="signal_icon_size">24dp</dimen>
+    <dimen name="signal_fab_size">56dp</dimen>
+    <dimen name="signal_list_avatar_size">52dp</dimen>
+    <dimen name="signal_list_row_min_height">80dp</dimen>
+    <dimen name="signal_list_row_vertical_padding">12dp</dimen>
+    <dimen name="signal_unread_badge_min_size">20dp</dimen>
+</resources>
