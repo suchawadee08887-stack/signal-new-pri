@@ -500,7 +500,7 @@ open class MessageService(
    * Send completed successfully.
    *
    * [devices] is the set of recipient devices the encrypted payload was delivered to. Callers persisting
-   * a [dev.chat.fork.messenger.database.MessageSendLogTables] entry (or a pending PNI signature record)
+   * a [org.thoughtcrime.securesms.database.MessageSendLogTables] entry (or a pending PNI signature record)
    * need this to know which sessions the recipient may later reference in a retry receipt.
    */
   data class SendSuccess(

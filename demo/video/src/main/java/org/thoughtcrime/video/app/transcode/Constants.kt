@@ -5,8 +5,8 @@
 
 package org.thoughtcrime.video.app.transcode
 
-import dev.chat.fork.messenger.video.TranscodingConfig.QualityTier
-import dev.chat.fork.messenger.video.videoconverter.utils.VideoConstants
+import org.thoughtcrime.securesms.video.TranscodingConfig.QualityTier
+import org.thoughtcrime.securesms.video.videoconverter.utils.VideoConstants
 
 /**
  * A dumping ground for constants that should be referenced across the sample app.

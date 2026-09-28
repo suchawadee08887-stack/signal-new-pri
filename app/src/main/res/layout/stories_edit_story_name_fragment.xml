@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     tools:viewBindingIgnore="true">
 
-    <dev.chat.fork.messenger.util.views.DarkOverflowToolbar
+    <org.thoughtcrime.securesms.util.views.DarkOverflowToolbar
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="64dp"
@@ -30,7 +30,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/toolbar">
 
-        <dev.chat.fork.messenger.components.emoji.EmojiEditText
+        <org.thoughtcrime.securesms.components.emoji.EmojiEditText
             android:id="@+id/story_name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -41,7 +41,7 @@
 
     </com.google.android.material.textfield.TextInputLayout>
 
-    <dev.chat.fork.messenger.util.views.CircularProgressMaterialButton
+    <org.thoughtcrime.securesms.util.views.CircularProgressMaterialButton
         android:id="@+id/save"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

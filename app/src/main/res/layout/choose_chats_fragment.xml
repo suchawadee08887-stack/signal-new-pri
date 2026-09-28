@@ -17,7 +17,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:navigationIcon="@drawable/symbol_arrow_start_24" />
 
-    <dev.chat.fork.messenger.components.ContactFilterView
+    <org.thoughtcrime.securesms.components.ContactFilterView
         android:id="@+id/contact_filter_edit_text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -30,7 +30,7 @@
 
     <androidx.fragment.app.FragmentContainerView
         android:id="@+id/contact_selection_list"
-        android:name="dev.chat.fork.messenger.ContactSelectionListFragment"
+        android:name="org.thoughtcrime.securesms.ContactSelectionListFragment"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:clipChildren="false"

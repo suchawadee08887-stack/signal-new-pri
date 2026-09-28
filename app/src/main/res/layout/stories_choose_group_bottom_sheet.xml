@@ -24,7 +24,7 @@
         android:text="@string/ChooseGroupStoryBottomSheet__choose_groups"
         android:textAppearance="@style/Signal.Text.TitleMedium" />
 
-    <dev.chat.fork.messenger.components.emoji.EmojiEditText
+    <org.thoughtcrime.securesms.components.emoji.EmojiEditText
         android:id="@+id/search_field"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -40,7 +40,7 @@
         android:textColor="@color/signal_colorOnSurfaceVariant"
         app:backgroundTint="@color/signal_colorSurface5" />
 
-    <dev.chat.fork.messenger.contacts.paged.ContactSearchView
+    <org.thoughtcrime.securesms.contacts.paged.ContactSearchView
         android:id="@+id/contact_recycler"
         android:layout_width="match_parent"
         android:layout_height="0dp"

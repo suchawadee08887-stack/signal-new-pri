@@ -18,7 +18,7 @@
         android:importantForAccessibility="no"
         android:scaleType="fitCenter" />
 
-    <dev.chat.fork.messenger.stories.StoryTextPostView
+    <org.thoughtcrime.securesms.stories.StoryTextPostView
         android:id="@+id/text"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />

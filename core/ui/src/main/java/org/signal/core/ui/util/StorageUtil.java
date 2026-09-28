@@ -26,7 +26,7 @@ import java.util.Objects;
 
 public class StorageUtil {
 
-  private static final String PRODUCTION_PACKAGE_ID = "dev.chat.fork.messenger";
+  private static final String PRODUCTION_PACKAGE_ID = "org.thoughtcrime.securesms";
 
   public static File getOrCreateBackupDirectory() throws NoExternalStorageException {
     File storage = Environment.getExternalStorageDirectory();

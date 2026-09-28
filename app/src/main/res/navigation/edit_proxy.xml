@@ -11,7 +11,7 @@
 
     <fragment
         android:id="@+id/edit_proxy_fragment"
-        android:name="dev.chat.fork.messenger.preferences.EditProxyFragment"
+        android:name="org.thoughtcrime.securesms.preferences.EditProxyFragment"
         tools:layout="@layout/edit_proxy_fragment" />
 
 </navigation>

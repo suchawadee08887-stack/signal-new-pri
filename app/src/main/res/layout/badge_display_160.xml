@@ -9,7 +9,7 @@
     android:layout_marginEnd="12dp"
     android:layout_marginBottom="16dp">
 
-    <dev.chat.fork.messenger.badges.BadgeImageView
+    <org.thoughtcrime.securesms.badges.BadgeImageView
         android:id="@+id/badge"
         android:layout_width="160dp"
         android:layout_height="160dp"

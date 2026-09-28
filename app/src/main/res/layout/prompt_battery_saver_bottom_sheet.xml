@@ -35,7 +35,7 @@
             android:gravity="center"
             android:text="@string/PromptBatterySaverBottomSheet__title" />
 
-        <dev.chat.fork.messenger.util.views.LearnMoreTextView
+        <org.thoughtcrime.securesms.util.views.LearnMoreTextView
             android:id="@+id/message"
             style="@style/Signal.Text.BodyMedium"
             android:layout_width="match_parent"

@@ -23,7 +23,7 @@
         tools:text="⚠ Review requests carefully"
         tools:visibility="visible" />
 
-    <dev.chat.fork.messenger.util.views.LearnMoreTextView
+    <org.thoughtcrime.securesms.util.views.LearnMoreTextView
         android:id="@+id/message_request_question"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

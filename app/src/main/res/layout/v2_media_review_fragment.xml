@@ -37,7 +37,7 @@
             android:background="@color/transparent"
             app:layout_constraintBottom_toBottomOf="@id/timeline_guideline" />
 
-        <dev.chat.fork.messenger.components.emoji.SimpleEmojiTextView
+        <org.thoughtcrime.securesms.components.emoji.SimpleEmojiTextView
             android:id="@+id/recipient"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -99,7 +99,7 @@
             tools:alpha="1"
             tools:visibility="visible" />
 
-        <dev.chat.fork.messenger.components.emoji.EmojiTextView
+        <org.thoughtcrime.securesms.components.emoji.EmojiTextView
             android:id="@+id/add_a_message"
             android:layout_width="0dp"
             android:layout_height="44dp"
@@ -318,7 +318,7 @@
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-    <dev.chat.fork.messenger.util.views.TouchInterceptingFrameLayout
+    <org.thoughtcrime.securesms.util.views.TouchInterceptingFrameLayout
         android:id="@+id/progress_wrapper"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -335,6 +335,6 @@
             android:layout_gravity="center"
             android:indeterminate="true"
             android:indeterminateBehavior="cycle" />
-    </dev.chat.fork.messenger.util.views.TouchInterceptingFrameLayout>
+    </org.thoughtcrime.securesms.util.views.TouchInterceptingFrameLayout>
 
 </FrameLayout>

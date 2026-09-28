@@ -22,7 +22,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <dev.chat.fork.messenger.components.emoji.EmojiTextView
+        <org.thoughtcrime.securesms.components.emoji.EmojiTextView
             android:id="@+id/linkpreview_title"
             style="@style/Signal.Text.LabelLarge"
             android:layout_width="0dp"
@@ -46,7 +46,7 @@
             app:barrierDirection="bottom"
             app:constraint_referenced_ids="linkpreview_thumbnail,linkpreview_title" />
 
-        <dev.chat.fork.messenger.components.emoji.EmojiTextView
+        <org.thoughtcrime.securesms.components.emoji.EmojiTextView
             android:id="@+id/linkpreview_description"
             style="@style/Signal.Text.BodyMedium"
             android:layout_width="0dp"
@@ -62,7 +62,7 @@
             app:layout_constraintTop_toBottomOf="@id/linkpreview_header_barrier"
             tools:text="Wall crawler strikes again!" />
 
-        <dev.chat.fork.messenger.components.emoji.EmojiTextView
+        <org.thoughtcrime.securesms.components.emoji.EmojiTextView
             android:id="@+id/linkpreview_site"
             style="@style/Signal.Text.MaterialCaption"
             android:layout_width="0dp"

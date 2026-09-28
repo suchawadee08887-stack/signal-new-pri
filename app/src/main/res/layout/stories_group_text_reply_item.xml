@@ -12,7 +12,7 @@
     android:paddingBottom="6dp"
     tools:viewBindingIgnore="true">
 
-    <dev.chat.fork.messenger.components.AvatarImageView
+    <org.thoughtcrime.securesms.components.AvatarImageView
         android:id="@+id/avatar"
         android:layout_width="28dp"
         android:layout_height="28dp"
@@ -62,7 +62,7 @@
         app:layout_constraintStart_toEndOf="@id/avatar"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <dev.chat.fork.messenger.components.FromTextView
+    <org.thoughtcrime.securesms.components.FromTextView
         android:id="@+id/name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -77,7 +77,7 @@
         app:layout_constraintTop_toTopOf="parent"
         tools:text="Miles Morales" />
 
-    <dev.chat.fork.messenger.components.emoji.EmojiTextView
+    <org.thoughtcrime.securesms.components.emoji.EmojiTextView
         android:id="@+id/body"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -133,7 +133,7 @@
         tools:text="Not sent, tap for details"
         tools:textColor="@color/signal_text_secondary" />
 
-    <dev.chat.fork.messenger.components.DeliveryStatusView
+    <org.thoughtcrime.securesms.components.DeliveryStatusView
         android:id="@+id/delivery_status"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
@@ -144,7 +144,7 @@
         app:layout_constraintBottom_toBottomOf="@+id/viewed_at_bottom_barrier"
         app:layout_constraintStart_toEndOf="@+id/viewed_at_end_barrier" />
 
-    <dev.chat.fork.messenger.components.AlertView
+    <org.thoughtcrime.securesms.components.AlertView
         android:id="@+id/alert_view"
         android:layout_width="20dp"
         android:layout_height="20dp"
@@ -168,7 +168,7 @@
         app:layout_constraintStart_toEndOf="@+id/bubble_end_barrier"
         app:layout_goneMarginEnd="0dp" />
 
-    <dev.chat.fork.messenger.components.emoji.EmojiImageView
+    <org.thoughtcrime.securesms.components.emoji.EmojiImageView
         android:id="@+id/reaction"
         android:layout_width="28dp"
         android:layout_height="28dp"

@@ -28,7 +28,7 @@
             app:layout_constraintTop_toTopOf="parent"
             tools:backgroundTint="#DEE3FF" />
 
-        <dev.chat.fork.messenger.components.emoji.EmojiEditText
+        <org.thoughtcrime.securesms.components.emoji.EmojiEditText
             android:id="@+id/avatar_picker_item_text"
             android:layout_width="0dp"
             android:layout_height="0dp"

@@ -73,8 +73,8 @@ import org.signal.mediasend.screens.edit.video.VideoEditorViewModel
 import org.signal.mediasend.screens.edit.video.VideoSizeHint
 import org.signal.mediasend.screens.edit.video.VideoTrimBar
 import org.signal.mediasend.screens.edit.video.VideoTrimData
-import dev.chat.fork.messenger.video.TranscodingConfig
-import dev.chat.fork.messenger.video.interfaces.MediaInputFactory
+import org.thoughtcrime.securesms.video.TranscodingConfig
+import org.thoughtcrime.securesms.video.interfaces.MediaInputFactory
 
 @Composable
 internal fun MediaEditScreen(

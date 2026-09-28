@@ -63,7 +63,7 @@ import org.signal.mediasend.screens.edit.image.BrushTool
 import org.signal.mediasend.screens.edit.image.BrushWidthsState
 import org.signal.mediasend.screens.edit.video.VideoTrimData
 import org.signal.mediasend.util.MeteredConnectivity
-import dev.chat.fork.messenger.video.videoconverter.utils.VideoConstants
+import org.thoughtcrime.securesms.video.videoconverter.utils.VideoConstants
 import java.io.FileInputStream
 import java.io.IOException
 import kotlin.coroutines.resume

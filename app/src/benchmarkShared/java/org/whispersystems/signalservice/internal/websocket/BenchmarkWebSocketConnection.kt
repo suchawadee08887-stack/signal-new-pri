@@ -12,7 +12,7 @@ import org.signal.core.util.JsonUtils
 import org.signal.network.websocket.WebSocketRequestMessage
 import org.signal.network.websocket.WebSocketResponseMessage
 import org.signal.network.websocket.WebsocketResponse
-import dev.chat.fork.messenger.util.SignalTrace
+import org.thoughtcrime.securesms.util.SignalTrace
 import org.whispersystems.signalservice.api.websocket.WebSocketConnectionState
 import org.whispersystems.signalservice.internal.push.SendMessageResponse
 import java.net.SocketException

@@ -19,7 +19,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <dev.chat.fork.messenger.components.emoji.EmojiTextView
+        <org.thoughtcrime.securesms.components.emoji.EmojiTextView
             android:id="@+id/safety_number_bucket_header"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

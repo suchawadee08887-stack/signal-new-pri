@@ -11,7 +11,7 @@
     android:minHeight="64dp"
     android:paddingStart="@dimen/dsl_settings_gutter">
 
-    <dev.chat.fork.messenger.components.AvatarImageView
+    <org.thoughtcrime.securesms.components.AvatarImageView
         android:id="@+id/recipient_avatar"
         android:layout_width="40dp"
         android:layout_height="40dp"
@@ -20,7 +20,7 @@
         app:layout_constraintTop_toTopOf="parent"
         tools:src="@tools:sample/avatars" />
 
-    <dev.chat.fork.messenger.badges.BadgeImageView
+    <org.thoughtcrime.securesms.badges.BadgeImageView
         android:id="@+id/recipient_badge"
         android:layout_width="24dp"
         android:layout_height="24dp"
@@ -31,7 +31,7 @@
         app:layout_constraintStart_toStartOf="@id/recipient_avatar"
         app:layout_constraintTop_toTopOf="@id/recipient_avatar" />
 
-    <dev.chat.fork.messenger.components.emoji.EmojiTextView
+    <org.thoughtcrime.securesms.components.emoji.EmojiTextView
         android:id="@+id/recipient_name"
         android:layout_width="0dp"
         android:layout_height="wrap_content"

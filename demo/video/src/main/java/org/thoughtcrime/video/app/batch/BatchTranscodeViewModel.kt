@@ -20,7 +20,7 @@ import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.launch
-import dev.chat.fork.messenger.video.videoconverter.MediaConverter
+import org.thoughtcrime.securesms.video.videoconverter.MediaConverter
 import org.thoughtcrime.video.app.transcode.TranscodeSettings
 import org.thoughtcrime.video.app.transcode.TranscodeTestRepository
 import java.io.File

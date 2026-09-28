@@ -28,7 +28,7 @@ class BaselineProfileGenerator {
   fun startup() {
     var setup = false
     baselineProfileRule.collect(
-      packageName = "dev.chat.fork.messenger",
+      packageName = "org.thoughtcrime.securesms",
       includeInStartupProfile = true,
       profileBlock = {
         if (!setup) {

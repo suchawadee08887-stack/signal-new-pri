@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<dev.chat.fork.messenger.components.InputPanel xmlns:android="http://schemas.android.com/apk/res/android"
+<org.thoughtcrime.securesms.components.InputPanel xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/bottom_panel"
@@ -120,7 +120,7 @@
         app:barrierDirection="bottom"
         app:constraint_referenced_ids="edit_message_title,edit_message_thumbnail,quote_view,link_preview" />
 
-    <dev.chat.fork.messenger.components.emoji.EmojiToggle
+    <org.thoughtcrime.securesms.components.emoji.EmojiToggle
         android:id="@+id/emoji_toggle"
         android:layout_width="wrap_content"
         android:layout_height="@dimen/conversation_compose_height"
@@ -146,7 +146,7 @@
         android:visibility="visible"
         app:layout_constraintTop_toBottomOf="@id/compose_bubble_top_elements">
 
-        <dev.chat.fork.messenger.components.ComposeText
+        <org.thoughtcrime.securesms.components.ComposeText
             android:id="@+id/embedded_text_editor"
             style="@style/ComposeEditText"
             android:layout_width="match_parent"
@@ -159,7 +159,7 @@
             tools:hint="Send TextSecure message">
 
             <requestFocus />
-        </dev.chat.fork.messenger.components.ComposeText>
+        </org.thoughtcrime.securesms.components.ComposeText>
 
     </FrameLayout>
 
@@ -170,7 +170,7 @@
         app:barrierDirection="start"
         app:constraint_referenced_ids="quick_attachment_toggle,inline_attachment_container" />
 
-    <dev.chat.fork.messenger.components.HidingLinearLayout
+    <org.thoughtcrime.securesms.components.HidingLinearLayout
         android:id="@+id/quick_attachment_toggle"
         android:layout_width="wrap_content"
         android:layout_height="0dp"
@@ -194,7 +194,7 @@
             app:srcCompat="@drawable/ic_camera_24"
             app:tint="@color/signal_colorOnSurfaceVariant" />
 
-        <dev.chat.fork.messenger.components.MicrophoneRecorderView
+        <org.thoughtcrime.securesms.components.MicrophoneRecorderView
             android:id="@+id/recorder_view"
             android:layout_width="24dp"
             android:layout_height="match_parent"
@@ -206,11 +206,11 @@
 
             <include layout="@layout/microphone_recorder_view" />
 
-        </dev.chat.fork.messenger.components.MicrophoneRecorderView>
+        </org.thoughtcrime.securesms.components.MicrophoneRecorderView>
 
-    </dev.chat.fork.messenger.components.HidingLinearLayout>
+    </org.thoughtcrime.securesms.components.HidingLinearLayout>
 
-    <dev.chat.fork.messenger.components.HidingLinearLayout
+    <org.thoughtcrime.securesms.components.HidingLinearLayout
         android:id="@+id/inline_attachment_container"
         android:layout_width="wrap_content"
         android:layout_height="0dp"
@@ -232,7 +232,7 @@
             app:srcCompat="@drawable/ic_plus_24"
             app:tint="@color/signal_colorOnSurface" />
 
-    </dev.chat.fork.messenger.components.HidingLinearLayout>
+    </org.thoughtcrime.securesms.components.HidingLinearLayout>
 
     <include
         layout="@layout/recording_layout"
@@ -255,7 +255,7 @@
         app:layout_constraintStart_toStartOf="@id/compose_bubble"
         app:layout_constraintTop_toBottomOf="@id/compose_bubble_top_elements" />
 
-    <dev.chat.fork.messenger.components.AnimatingToggle
+    <org.thoughtcrime.securesms.components.AnimatingToggle
         android:id="@+id/button_toggle"
         android:layout_width="40dp"
         android:layout_height="40dp"
@@ -293,7 +293,7 @@
             app:srcCompat="@drawable/symbol_check_24"
             app:tint="@color/conversation_send_button_tint" />
 
-        <dev.chat.fork.messenger.components.SendButton
+        <org.thoughtcrime.securesms.components.SendButton
             android:id="@+id/send_button"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -305,6 +305,6 @@
             app:srcCompat="@drawable/ic_send_unlock_24"
             app:tint="@color/conversation_send_button_tint" />
 
-    </dev.chat.fork.messenger.components.AnimatingToggle>
+    </org.thoughtcrime.securesms.components.AnimatingToggle>
 
-</dev.chat.fork.messenger.components.InputPanel>
+</org.thoughtcrime.securesms.components.InputPanel>

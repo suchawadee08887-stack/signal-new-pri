@@ -49,7 +49,7 @@ Shrinker keep rules only. No runtime effect.
 - Remove `armeabi-v7a`, `x86`, or `x86_64` — would break older phones, Chromebooks, and emulators.
 - Disable `isUniversalApk` — sideload still needs a fat APK; per-ABI splits remain for smaller downloads.
 - Drop locales / enable language splits — changing language must keep working offline.
-- Turn on R8 optimize/obfuscate or drop `-keep class dev.chat.fork.messenger.**` — high crash/behavior risk.
+- Turn on R8 optimize/obfuscate or drop `-keep class org.thoughtcrime.securesms.**` — high crash/behavior risk.
 - Delete features, maps, calling, or backups code.
 
 ## Expected size impact

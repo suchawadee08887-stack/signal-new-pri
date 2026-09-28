@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:clipToPadding="false"
     android:fillViewport="true"
-    tools:context="dev.chat.fork.messenger.registration.ui.phonenumber.EnterPhoneNumberFragment">
+    tools:context="org.thoughtcrime.securesms.registration.ui.phonenumber.EnterPhoneNumberFragment">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -187,7 +187,7 @@
             app:layout_constraintStart_toStartOf="parent"
             tools:visibility="visible" />
 
-        <dev.chat.fork.messenger.util.views.CircularProgressMaterialButton
+        <org.thoughtcrime.securesms.util.views.CircularProgressMaterialButton
             android:id="@+id/registerButton"
             android:layout_width="0dp"
             android:layout_height="wrap_content"

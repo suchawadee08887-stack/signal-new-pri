@@ -10,7 +10,7 @@ import androidx.media3.exoplayer.ExoPlayer
 import org.signal.core.util.contentproviders.BlobProvider
 import org.signal.mediasend.preupload.PreUploadRepository
 import org.signal.video.exo.ExoPlayerPool
-import dev.chat.fork.messenger.video.interfaces.MediaInputFactory
+import org.thoughtcrime.securesms.video.interfaces.MediaInputFactory
 
 /**
  * MediaSend Feature Module dependencies

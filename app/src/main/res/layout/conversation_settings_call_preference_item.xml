@@ -44,7 +44,7 @@
         app:layout_constraintTop_toBottomOf="@id/call_type"
         tools:text="10:00 AM" />
 
-    <dev.chat.fork.messenger.components.ExpirationTimerView
+    <org.thoughtcrime.securesms.components.ExpirationTimerView
         android:id="@+id/call_timer"
         android:layout_width="12dp"
         android:layout_height="12dp"

@@ -1,38 +1,38 @@
 package org.signal.benchmark.setup
 
-import dev.chat.fork.messenger.jobmanager.Job
-import dev.chat.fork.messenger.jobs.AccountConsistencyWorkerJob
-import dev.chat.fork.messenger.jobs.ArchiveBackupIdReservationJob
-import dev.chat.fork.messenger.jobs.AvatarGroupsV2DownloadJob
-import dev.chat.fork.messenger.jobs.CreateReleaseChannelJob
-import dev.chat.fork.messenger.jobs.DirectoryRefreshJob
-import dev.chat.fork.messenger.jobs.DownloadLatestEmojiDataJob
-import dev.chat.fork.messenger.jobs.EmojiSearchIndexDownloadJob
-import dev.chat.fork.messenger.jobs.FontDownloaderJob
-import dev.chat.fork.messenger.jobs.GroupRingCleanupJob
-import dev.chat.fork.messenger.jobs.GroupV2UpdateSelfProfileKeyJob
-import dev.chat.fork.messenger.jobs.LinkedDeviceInactiveCheckJob
-import dev.chat.fork.messenger.jobs.MultiDeviceProfileKeyUpdateJob
-import dev.chat.fork.messenger.jobs.PostRegistrationBackupRedemptionJob
-import dev.chat.fork.messenger.jobs.PreKeysSyncJob
-import dev.chat.fork.messenger.jobs.ProfileUploadJob
-import dev.chat.fork.messenger.jobs.RefreshAttributesJob
-import dev.chat.fork.messenger.jobs.RefreshSvrCredentialsJob
-import dev.chat.fork.messenger.jobs.RequestGroupV2InfoJob
-import dev.chat.fork.messenger.jobs.ResetSvrGuessCountJob
-import dev.chat.fork.messenger.jobs.RestoreOptimizedMediaJob
-import dev.chat.fork.messenger.jobs.RetrieveProfileAvatarJob
-import dev.chat.fork.messenger.jobs.RetrieveProfileJob
-import dev.chat.fork.messenger.jobs.RetrieveRemoteAnnouncementsJob
-import dev.chat.fork.messenger.jobs.RotateCertificateJob
-import dev.chat.fork.messenger.jobs.StickerPackDownloadJob
-import dev.chat.fork.messenger.jobs.StorageSyncJob
-import dev.chat.fork.messenger.jobs.StoryOnboardingDownloadJob
+import org.thoughtcrime.securesms.jobmanager.Job
+import org.thoughtcrime.securesms.jobs.AccountConsistencyWorkerJob
+import org.thoughtcrime.securesms.jobs.ArchiveBackupIdReservationJob
+import org.thoughtcrime.securesms.jobs.AvatarGroupsV2DownloadJob
+import org.thoughtcrime.securesms.jobs.CreateReleaseChannelJob
+import org.thoughtcrime.securesms.jobs.DirectoryRefreshJob
+import org.thoughtcrime.securesms.jobs.DownloadLatestEmojiDataJob
+import org.thoughtcrime.securesms.jobs.EmojiSearchIndexDownloadJob
+import org.thoughtcrime.securesms.jobs.FontDownloaderJob
+import org.thoughtcrime.securesms.jobs.GroupRingCleanupJob
+import org.thoughtcrime.securesms.jobs.GroupV2UpdateSelfProfileKeyJob
+import org.thoughtcrime.securesms.jobs.LinkedDeviceInactiveCheckJob
+import org.thoughtcrime.securesms.jobs.MultiDeviceProfileKeyUpdateJob
+import org.thoughtcrime.securesms.jobs.PostRegistrationBackupRedemptionJob
+import org.thoughtcrime.securesms.jobs.PreKeysSyncJob
+import org.thoughtcrime.securesms.jobs.ProfileUploadJob
+import org.thoughtcrime.securesms.jobs.RefreshAttributesJob
+import org.thoughtcrime.securesms.jobs.RefreshSvrCredentialsJob
+import org.thoughtcrime.securesms.jobs.RequestGroupV2InfoJob
+import org.thoughtcrime.securesms.jobs.ResetSvrGuessCountJob
+import org.thoughtcrime.securesms.jobs.RestoreOptimizedMediaJob
+import org.thoughtcrime.securesms.jobs.RetrieveProfileAvatarJob
+import org.thoughtcrime.securesms.jobs.RetrieveProfileJob
+import org.thoughtcrime.securesms.jobs.RetrieveRemoteAnnouncementsJob
+import org.thoughtcrime.securesms.jobs.RotateCertificateJob
+import org.thoughtcrime.securesms.jobs.StickerPackDownloadJob
+import org.thoughtcrime.securesms.jobs.StorageSyncJob
+import org.thoughtcrime.securesms.jobs.StoryOnboardingDownloadJob
 
 /**
  * A [Job] that does nothing and always succeeds. Test setups substitute this for jobs whose
  * real implementations would hit the network at startup (and so would either generate noise
- * against the [DeviceTransferBlockingInterceptor][dev.chat.fork.messenger.net.DeviceTransferBlockingInterceptor]
+ * against the [DeviceTransferBlockingInterceptor][org.thoughtcrime.securesms.net.DeviceTransferBlockingInterceptor]
  * or fail against unstubbed mocks). Use [replaceFactories] to apply the swap.
  */
 class NoOpJob(parameters: Parameters) : Job(parameters) {

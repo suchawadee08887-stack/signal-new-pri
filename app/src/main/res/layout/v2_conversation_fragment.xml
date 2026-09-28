@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<dev.chat.fork.messenger.components.InputAwareConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<org.thoughtcrime.securesms.components.InputAwareConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -45,7 +45,7 @@
         app:layout_constraintStart_toStartOf="@id/parent_start_guideline"
         app:layout_constraintTop_toTopOf="parent">
 
-        <dev.chat.fork.messenger.conversation.mutiselect.MultiselectRecyclerView
+        <org.thoughtcrime.securesms.conversation.mutiselect.MultiselectRecyclerView
             android:id="@+id/conversation_item_recycler"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -89,7 +89,7 @@
         app:layout_constraintStart_toStartOf="@id/parent_start_guideline"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <dev.chat.fork.messenger.util.views.DarkOverflowToolbar
+    <org.thoughtcrime.securesms.util.views.DarkOverflowToolbar
         android:id="@+id/toolbar"
         android:layout_width="0dp"
         android:layout_height="@dimen/signal_m3_toolbar_height"
@@ -136,9 +136,9 @@
 
         </LinearLayout>
 
-    </dev.chat.fork.messenger.util.views.DarkOverflowToolbar>
+    </org.thoughtcrime.securesms.util.views.DarkOverflowToolbar>
 
-    <dev.chat.fork.messenger.components.compose.ActionModeTopBarView
+    <org.thoughtcrime.securesms.components.compose.ActionModeTopBarView
         android:id="@+id/action_mode_top_bar"
         android:layout_width="0dp"
         android:layout_height="@dimen/signal_m3_toolbar_height"
@@ -157,7 +157,7 @@
         app:layout_constraintStart_toStartOf="@id/parent_start_guideline"
         app:layout_constraintTop_toBottomOf="@+id/toolbar">
 
-        <dev.chat.fork.messenger.conversation.v2.ConversationBannerView
+        <org.thoughtcrime.securesms.conversation.v2.ConversationBannerView
             android:id="@+id/conversation_banner"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
@@ -198,11 +198,11 @@
                 android:inflatedId="@+id/banner_compose_view"
                 android:layout="@layout/conversation_list_banner_view" />
 
-        </dev.chat.fork.messenger.conversation.v2.ConversationBannerView>
+        </org.thoughtcrime.securesms.conversation.v2.ConversationBannerView>
 
     </FrameLayout>
 
-    <dev.chat.fork.messenger.components.ConversationScrollToView
+    <org.thoughtcrime.securesms.components.ConversationScrollToView
         android:id="@+id/scroll_to_mention"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -215,7 +215,7 @@
         app:layout_goneMarginBottom="20dp"
         tools:visibility="visible" />
 
-    <dev.chat.fork.messenger.components.ConversationScrollToView
+    <org.thoughtcrime.securesms.components.ConversationScrollToView
         android:id="@+id/scroll_to_bottom"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -284,7 +284,7 @@
         app:layout_constraintEnd_toEndOf="@id/parent_end_guideline"
         app:layout_constraintStart_toStartOf="@id/parent_start_guideline" />
 
-    <dev.chat.fork.messenger.conversation.v2.DisabledInputView
+    <org.thoughtcrime.securesms.conversation.v2.DisabledInputView
         android:id="@+id/conversation_disabled_input"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
@@ -381,7 +381,7 @@
         android:foreground="@color/reactions_screen_dark_shade_color"
         android:visibility="gone" />
 
-    <dev.chat.fork.messenger.components.menu.SignalBottomActionBar
+    <org.thoughtcrime.securesms.components.menu.SignalBottomActionBar
         android:id="@+id/conversation_bottom_action_bar"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
@@ -403,4 +403,4 @@
         app:layout_constraintStart_toStartOf="@+id/parent_start_guideline"
         app:layout_constraintTop_toTopOf="@+id/status_bar_guideline" />
 
-</dev.chat.fork.messenger.components.InputAwareConstraintLayout>
+</org.thoughtcrime.securesms.components.InputAwareConstraintLayout>

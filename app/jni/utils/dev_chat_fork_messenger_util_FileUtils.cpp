@@ -1,4 +1,4 @@
-#include "dev_chat_fork_messenger_util_FileUtils.h"
+#include "org_thoughtcrime_securesms_util_FileUtils.h"
 
 #include <sys/types.h>
 #include <sys/stat.h>
@@ -6,7 +6,7 @@
 #include <linux/memfd.h>
 #include <syscall.h>
 
-jint JNICALL Java_dev_chat_fork_messenger_util_FileUtils_getFileDescriptorOwner
+jint JNICALL Java_org_thoughtcrime_securesms_util_FileUtils_getFileDescriptorOwner
   (JNIEnv *env, jclass clazz, jobject fileDescriptor)
 {
   jclass fdClass = env->GetObjectClass(fileDescriptor);
@@ -32,7 +32,7 @@ jint JNICALL Java_dev_chat_fork_messenger_util_FileUtils_getFileDescriptorOwner
   return stat_struct.st_uid;
 }
 
-JNIEXPORT jint JNICALL Java_dev_chat_fork_messenger_util_FileUtils_createMemoryFileDescriptor
+JNIEXPORT jint JNICALL Java_org_thoughtcrime_securesms_util_FileUtils_createMemoryFileDescriptor
   (JNIEnv *env, jclass clazz, jstring jname)
 {
   const char *name = env->GetStringUTFChars(jname, NULL);

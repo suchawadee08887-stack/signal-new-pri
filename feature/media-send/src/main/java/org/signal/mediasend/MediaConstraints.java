@@ -18,7 +18,7 @@ import org.signal.core.util.ContentTypeUtil;
 import org.signal.core.util.logging.Log;
 import org.signal.core.util.bitmaps.BitmapDecodingException;
 import org.signal.core.util.bitmaps.BitmapUtil;
-import dev.chat.fork.messenger.video.TranscodingConfig;
+import org.thoughtcrime.securesms.video.TranscodingConfig;
 
 import java.io.IOException;
 import java.io.InputStream;

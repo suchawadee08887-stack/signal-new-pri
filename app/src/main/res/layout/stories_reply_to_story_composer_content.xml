@@ -14,7 +14,7 @@
         android:layout_height="wrap_content"
         app:layout_constraintTop_toTopOf="parent">
 
-        <dev.chat.fork.messenger.components.emoji.EmojiPageView
+        <org.thoughtcrime.securesms.components.emoji.EmojiPageView
             android:id="@+id/reaction_emoji_view"
             android:layout_width="0dp"
             android:layout_weight="1"
@@ -59,7 +59,7 @@
         app:layout_goneMarginEnd="16dp"
         android:orientation="horizontal">
 
-        <dev.chat.fork.messenger.components.emoji.EmojiToggle
+        <org.thoughtcrime.securesms.components.emoji.EmojiToggle
             android:id="@+id/emoji_toggle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -70,7 +70,7 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent" />
 
-        <dev.chat.fork.messenger.components.ComposeText
+        <org.thoughtcrime.securesms.components.ComposeText
             android:id="@+id/compose_text"
             android:layout_width="0dp"
             android:layout_height="wrap_content"

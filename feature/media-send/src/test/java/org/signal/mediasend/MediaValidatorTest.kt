@@ -15,7 +15,7 @@ import org.robolectric.RobolectricTestRunner
 import org.robolectric.annotation.Config
 import org.signal.core.models.media.Media
 import org.signal.core.util.ContentTypeUtil
-import dev.chat.fork.messenger.video.TranscodingConfig
+import org.thoughtcrime.securesms.video.TranscodingConfig
 
 /**
  * Covers [MediaValidator.filterMedia]'s two jobs: deciding what survives, and reporting which item did not and why.

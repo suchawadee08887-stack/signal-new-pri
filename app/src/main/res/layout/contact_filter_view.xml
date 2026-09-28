@@ -20,7 +20,7 @@
             android:layout_height="match_parent"
             android:orientation="horizontal">
 
-            <dev.chat.fork.messenger.components.NoAutofillEditText
+            <org.thoughtcrime.securesms.components.NoAutofillEditText
                 android:id="@+id/search_view"
                 android:layout_width="0px"
                 android:layout_height="match_parent"
@@ -36,7 +36,7 @@
                 android:textColorHint="@color/signal_colorOnSurfaceVariant"
                 android:textCursorDrawable="@drawable/search_cursor" />
 
-            <dev.chat.fork.messenger.components.AnimatingToggle
+            <org.thoughtcrime.securesms.components.AnimatingToggle
                 android:id="@+id/button_toggle"
                 android:layout_width="44dp"
                 android:layout_height="44dp"
@@ -78,7 +78,7 @@
                     android:visibility="gone"
                     app:srcCompat="@drawable/ic_x_conversation_filter_24" />
 
-            </dev.chat.fork.messenger.components.AnimatingToggle>
+            </org.thoughtcrime.securesms.components.AnimatingToggle>
 
         </LinearLayout>
 

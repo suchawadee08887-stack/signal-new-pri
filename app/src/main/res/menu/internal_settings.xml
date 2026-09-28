@@ -6,7 +6,7 @@
       android:id="@+id/menu_search"
       android:icon="@drawable/symbol_search_24"
       android:title="@string/CameraContacts__menu_search"
-      app:actionViewClass="dev.chat.fork.messenger.components.SearchView"
+      app:actionViewClass="org.thoughtcrime.securesms.components.SearchView"
       app:iconTint="@color/signal_colorOnSurface"
       app:showAsAction="collapseActionView|always" />
 

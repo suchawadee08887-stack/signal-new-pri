@@ -116,7 +116,7 @@
             android:value="true" />
         <meta-data
             android:name="android.telephony.PROPERTY_SATELLITE_DATA_OPTIMIZED"
-            android:value="dev.chat.fork.messenger" />
+            android:value="org.thoughtcrime.securesms" />
 
         <!-- ======================================= -->
         <!-- Activities                              -->
@@ -372,7 +372,7 @@
             android:windowSoftInputMode="stateUnchanged">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="dev.chat.fork.messenger.MainActivity" />
+                android:value="org.thoughtcrime.securesms.MainActivity" />
         </activity>
 
         <activity
@@ -563,7 +563,7 @@
 
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="dev.chat.fork.messenger.MainActivity" />
+                android:value="org.thoughtcrime.securesms.MainActivity" />
         </activity>
 
         <activity
@@ -717,12 +717,12 @@
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
                 <category android:name="android.intent.category.DEFAULT" />
-                <data android:mimeType="vnd.android.cursor.item/vnd.dev.chat.fork.messenger.contact" />
+                <data android:mimeType="vnd.android.cursor.item/vnd.org.thoughtcrime.securesms.contact" />
             </intent-filter>
         </activity>
 
         <activity
-            android:name="dev.chat.fork.messenger.webrtc.VoiceCallShare"
+            android:name="org.thoughtcrime.securesms.webrtc.VoiceCallShare"
             android:configChanges="touchscreen|keyboard|keyboardHidden|orientation|screenLayout|screenSize"
             android:excludeFromRecents="true"
             android:exported="true"
@@ -733,13 +733,13 @@
             <intent-filter tools:ignore="AppLinkUrlError">
                 <action android:name="android.intent.action.VIEW" />
                 <category android:name="android.intent.category.DEFAULT" />
-                <data android:mimeType="vnd.android.cursor.item/vnd.dev.chat.fork.messenger.call" />
+                <data android:mimeType="vnd.android.cursor.item/vnd.org.thoughtcrime.securesms.call" />
             </intent-filter>
 
             <intent-filter tools:ignore="AppLinkUrlError">
                 <action android:name="android.intent.action.VIEW" />
                 <category android:name="android.intent.category.DEFAULT" />
-                <data android:mimeType="vnd.android.cursor.item/vnd.dev.chat.fork.messenger.videocall" />
+                <data android:mimeType="vnd.android.cursor.item/vnd.org.thoughtcrime.securesms.videocall" />
             </intent-filter>
 
         </activity>
@@ -1414,7 +1414,7 @@
             android:exported="false" />
 
         <service
-            android:name="dev.chat.fork.messenger.service.webrtc.ActiveCallManager$ActiveCallForegroundService"
+            android:name="org.thoughtcrime.securesms.service.webrtc.ActiveCallManager$ActiveCallForegroundService"
             android:exported="false"
             android:foregroundServiceType="dataSync|microphone|camera|phoneCall|mediaProjection" />
 
@@ -1430,7 +1430,7 @@
             android:enabled="true"
             android:exported="false">
             <intent-filter>
-                <action android:name="dev.chat.fork.messenger.notifications.CLEAR" />
+                <action android:name="org.thoughtcrime.securesms.notifications.CLEAR" />
             </intent-filter>
         </receiver>
 
@@ -1439,7 +1439,7 @@
             android:enabled="true"
             android:exported="false">
             <intent-filter>
-                <action android:name="dev.chat.fork.messenger.notifications.WEAR_REPLY" />
+                <action android:name="org.thoughtcrime.securesms.notifications.WEAR_REPLY" />
             </intent-filter>
         </receiver>
 
@@ -1484,7 +1484,7 @@
             android:exported="false">
             <intent-filter>
                 <action android:name="android.intent.action.BOOT_COMPLETED" />
-                <action android:name="dev.chat.fork.messenger.RESTART" />
+                <action android:name="org.thoughtcrime.securesms.RESTART" />
             </intent-filter>
         </receiver>
 
@@ -1517,7 +1517,7 @@
             android:exported="false">
             <intent-filter>
                 <action android:name="android.intent.action.BOOT_COMPLETED" />
-                <action android:name="dev.chat.fork.messenger.action.PROCESS_MESSAGES" />
+                <action android:name="org.thoughtcrime.securesms.action.PROCESS_MESSAGES" />
             </intent-filter>
         </receiver>
 
@@ -1571,7 +1571,7 @@
             android:name=".notifications.DeleteNotificationReceiver"
             android:exported="false">
             <intent-filter>
-                <action android:name="dev.chat.fork.messenger.DELETE_NOTIFICATION" />
+                <action android:name="org.thoughtcrime.securesms.DELETE_NOTIFICATION" />
             </intent-filter>
         </receiver>
 
@@ -1593,13 +1593,13 @@
         </receiver>
 
         <receiver
-            android:name="dev.chat.fork.messenger.service.webrtc.ActiveCallManager$ActiveCallServiceReceiver"
+            android:name="org.thoughtcrime.securesms.service.webrtc.ActiveCallManager$ActiveCallServiceReceiver"
             android:exported="false">
             <intent-filter>
-                <action android:name="dev.chat.fork.messenger.service.webrtc.ActiveCallAction.DENY" />
+                <action android:name="org.thoughtcrime.securesms.service.webrtc.ActiveCallAction.DENY" />
             </intent-filter>
             <intent-filter>
-                <action android:name="dev.chat.fork.messenger.service.webrtc.ActiveCallAction.HANGUP" />
+                <action android:name="org.thoughtcrime.securesms.service.webrtc.ActiveCallAction.HANGUP" />
             </intent-filter>
         </receiver>
 

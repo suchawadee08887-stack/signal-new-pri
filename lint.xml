@@ -37,11 +37,11 @@
     <issue id="AlertDialogBuilderUsage" severity="warning" />
 
     <issue id="RestrictedApi" severity="error">
-        <ignore path="*/dev/chat/fork/messenger/mediasend/camerax/VideoCapture.java" />
-        <ignore path="*/dev/chat/fork/messenger/mediasend/camerax/CameraXModule.java" />
-        <ignore path="*/dev/chat/fork/messenger/conversation/*.java" />
-        <ignore path="*/dev/chat/fork/messenger/lock/v2/CreateKbsPinViewModel.java" />
-        <ignore path="*/dev/chat/fork/messenger/jobs/StickerPackDownloadJob.java" />
+        <ignore path="*/org/thoughtcrime/securesms/mediasend/camerax/VideoCapture.java" />
+        <ignore path="*/org/thoughtcrime/securesms/mediasend/camerax/CameraXModule.java" />
+        <ignore path="*/org/thoughtcrime/securesms/conversation/*.java" />
+        <ignore path="*/org/thoughtcrime/securesms/lock/v2/CreateKbsPinViewModel.java" />
+        <ignore path="*/org/thoughtcrime/securesms/jobs/StickerPackDownloadJob.java" />
     </issue>
 
     <issue id="OptionalUsedAsFieldOrParameterType" severity="ignore" />
